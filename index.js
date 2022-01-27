@@ -27,8 +27,11 @@ const swaggerOptions = {
 }
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions)
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+app.get('/', function (req, res) {
+    res.send('Bienvenidos a la API de Pokemon. Para consultar todos los pokemones, ir a /api/pokemons/:name, sino ir a /api-docs para más documentacion');
+});
 require('./routes/pokemon.routes.js')(app)
 
 //Iniciar servidor
