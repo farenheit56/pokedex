@@ -1,0 +1,30 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "NodeJS server connected to an external Pokemon API to retrieve information about them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farenheit56/pokedex.git"
+  },
+  "keywords": [
+    "pokedex",
+    "pokemon"
+  ],
+  "author": "Lucas Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farenheit56/pokedex/issues"
+  },
+  "homepage": "https://github.com/farenheit56/pokedex#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  }
+}
